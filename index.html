@@ -1,62 +1,831 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    
-    <title>Cool Website</title>
-    <meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+<head>
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap" rel="stylesheet">
-    
-  </head>
-  <body>
-    <header>
-      
+  <title>Cool Website</title>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap"
+    rel="stylesheet">
+
+  <!-- JS Files -->
+  <script src="script.js"></script>
+
+  <!-- icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+  <header>
+
+    <div>
+      <h2 class="Main_T">Web Topics</h2>
+    </div>
+
+    <div class="header_btn">
       <div>
-        <h2 class="Main_T">Web Topics</h2>
+        <button>Dark mode</button>
       </div>
-
-      <div class="header_btn">
-        <div>
-          <button>Dark mode</button>
-        </div>
-        <div>
-          <button>Favourite</button>
-        </div>
+      <div>
+        <button>Favourite</button>
       </div>
+    </div>
 
-    </header>
+  </header>
 
-    <container>
-      
-      <div class="triangle-container">
-        <div class="triangle"></div>
-        <div class="triangle"></div>
-        <div class="Trag_content">
-          <div class="Top-contanier-h2">
-            <h2 class="Inner-contanier-h2">Welcome to our website!</h2>
-            
-          </div>
-          <div class="Top-contanier-p">
+  <container>
+
+    <div class="triangle-container">
+      <div class="triangle"></div>
+      <div class="triangle"></div>
+      <div class="Trag_content">
+        <div class="Top-contanier-h2">
+          <h2 class="Inner-contanier-h2">Welcome to our website!</h2>
+
+        </div>
+        <div class="Top-contanier-p">
           <p class="Inner-contanier-p">We have a new design that's fresh, modern, and easy to use.</p>
-          </div>
         </div>
       </div>
-      
-    </container>
+    </div>
+
+  </container>
 
 
-    <container class="container-content">
 
-      <div>
-        <h1>Work in progess</h1>
-        <p>There is construction going on here.</p>
+  <container class="container-content">
+
+    <div class="search-container">
+      <div class="search-input-container">
+        <input type="text" id="search" placeholder="Search...">
       </div>
+      <div>
+        <select id="sort-by">
+          <option value="relevance">Sort by Relevance</option>
+          <option value="date">Sort by Date</option>
+        </select>
+        <select id="filter-by">
+          <option value="all">Filter by All</option>
+          <option value="category1">Filter by Category 1</option>
+          <option value="category2">Filter by Category 2</option>
+        </select>
+      </div>
+    </div>
+
+
+    <div>
+      <h2>"24" Web Topics Found</h2>
+    </div>
+
+    <container class="container-main-content">
+
+      <!-- First row -->
+
+      <div class="card">
+        <div class="card-image">
+          <img src="img/logos/html.png" alt="HTML image">
+        </div>
+        <div class="card-content">
+          <p>Web Development Languages</p>
+          <p>HTML</p>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>Author: Sarah Smith</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="img/logos/css.webp" alt="HTML image">
+        </div>
+        <div class="card-content">
+          <p>Web Development Languages</p>
+          <p>CSS</p>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>Author: David Lee</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="img/logos/javascript.jpg" alt="HTML image">
+        </div>
+        <div class="card-content">
+          <p>Web Development Languages</p>
+          <p>JavaScript</p>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>Author: Emily Chen</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="img/logos/jquery.png" alt="HTML image">
+        </div>
+        <div class="card-content">
+          <p>Web Development Languages</p>
+          <p>HTML</p>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>Author: John Johnson</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="img/logos/angular.png" alt="HTML image">
+        </div>
+        <div class="card-content">
+          <p>Web Development Languages</p>
+          <p>HTML</p>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>Author: Sarah Smith</p>
+        </div>
+      </div>
+      <!-- End of First Row -->
+
+      <!-- Second Row -->
+      
+
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/react.webp" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/vuejs.jpeg" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/nodejs.webp" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/expressjs.webp" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/ruby.jpeg" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+        <!-- End of Second Row -->
+
+        <!-- Third Row -->
+      
+
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/django.jpeg" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/flask.webp" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/sql.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/nosql.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/restapi.jpeg" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+        <!-- End of Third Row -->
+
+        <!-- Fourth Row -->
+      
+
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/graphql.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/oauth.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/json.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/ajax.gif" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/websockets.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+        <!-- End of Fourth Row -->
+
+        <!-- Fifth Row -->
+      
+
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/responsive.gif" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/accessibility.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/ux.jpeg" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/ui.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/design-systems.jpeg" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+        <!-- End of Fifth Row -->
+
+        <!-- Sixth Row -->
+      
+
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/performance.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/cross-browser.jpeg" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/seo.jpeg" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/web-security.jpeg" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/testing.jpeg" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+        <!-- End of Sixth Row -->
+
+        <!-- Seventh Row -->
+      
+
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/ci-cd.jpeg" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/devops.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/cloud.jpeg" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/docker.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/microservices.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+        <!-- End of Seventh Row -->
+
+        <!-- Eigth Row -->
+      
+
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/pwa.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/wai.jpeg" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/cms.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-image">
+            <img src="img/logos/analytics.png" alt="HTML image">
+          </div>
+          <div class="card-content">
+            <p>Web Development Languages</p>
+            <p>HTML</p>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+        <!-- End of Eigth Row -->
+
     </container>
-    
-  </body>
+
+  </container>
+
+
+
+</body>
+
 </html>
