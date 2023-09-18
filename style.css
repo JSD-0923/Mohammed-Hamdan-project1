@@ -27,9 +27,9 @@ header {
     display: flex;
     flex-flow: row;
     align-items: center;
-
+/* 
     border-bottom-width: 1px;
-    border-bottom-style: solid;
+    border-bottom-style: solid; */
 }
 
 .Trag_content {
@@ -148,9 +148,9 @@ input {
 .card {
     background-color: var(--bg_default_light);
     width: 18%;
-    min-width: 228px;
+    min-width: 255px;
 
-    margin: 10px;
+    /* margin: 15px; */
     display: inline-block;
     vertical-align: top;
     text-align: center;
@@ -159,8 +159,8 @@ input {
 
 .card-image img {
     width: 100%;
-    max-height: 130px;
-    height: 130px;
+    max-height: 140px;
+    height: 140px;
     display: block;
     margin: 0 auto;
     object-fit: cover;
@@ -170,7 +170,7 @@ input {
 
 .card-content {
     padding: 15px;
-    padding-right: 0;
+    /* padding-right: 0; */
     text-align: left;
 }
 
@@ -200,6 +200,10 @@ input {
     flex-wrap: wrap;
     align-items: center;
     /* max-width: 1240px; */
-    gap: 6px;
+    gap: 30px;
     width:auto;
+}
+
+.Copyright{
+    text-align: center;
 }
