@@ -111,6 +111,7 @@ header {
     border-width: 70px 0px 0px 1000px;
     /* bottom right top left  */
     border-color: transparent transparent transparent #ff0000;
+    /* border-image: linear-gradient(transparent, #3498db, #e74c3c); */
     /* Triangle color */
     top: 0;
     right: 0;
@@ -123,11 +124,14 @@ header {
     border-width: 70px 1200px 0 0;
     /* bottom right top left   */
     border-color: #007bff transparent transparent transparent;
+    /* border-image: linear-gradient(#3498db, #e74c3c); */
+    
     /* Triangle color */
     top: 0;
     left: 0;
     transform: rotate(0deg);
 }
+
 
 .search-container {
     display: flex;
