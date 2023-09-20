@@ -102,34 +102,27 @@ header {
 
 .triangle {
     position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
+    width: 800px;
+    height: 120px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%);
 }
 
 .triangle:nth-child(1) {
-    border-width: 70px 0px 0px 1000px;
-    /* bottom right top left  */
-    border-color: transparent transparent transparent #ff0000;
-    /* border-image: linear-gradient(transparent, #3498db, #e74c3c); */
+    
     /* Triangle color */
     top: 0;
     right: 0;
-    transform: rotate(180deg);
+    background-image: linear-gradient(to bottom, red, blue);
 }
 
 .triangle:nth-child(2) {
 
-
-    border-width: 70px 1200px 0 0;
-    /* bottom right top left   */
-    border-color: #007bff transparent transparent transparent;
-    /* border-image: linear-gradient(#3498db, #e74c3c); */
-    
-    /* Triangle color */
+    width: 1000px;
     top: 0;
     left: 0;
-    transform: rotate(0deg);
+    background-image: linear-gradient(to bottom, green, yellow);
+    
+    transform: scaleX(-1);
 }
 
 
