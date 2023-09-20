@@ -31,15 +31,15 @@
 
     <div class="header_btn">
       <div>
-        <button class="button-flex">
+        <button class="button-flex" id="dark-mode-toggle">
           <svg class="button-svg" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-          <span>Dark Mode</span>
+          Dark Mode
         </button>
       </div>
       <div>
         <button class="button-flex">
         <svg class="button-svg" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-        <span>Favourites</span>
+        Favourites
         </button>
       </div>
     </div>
@@ -71,14 +71,13 @@
 
     <div class="search-container">
       <div class="search-input-container">
-        <input type="text" id="search" placeholder="Search...">
+        <input type="text" id="search" placeholder="Search the website...">
       </div>
       <div>
         <select id="sort-by">
-          <option value="relevance">Sort by Relevance</option>
-          <option value="date">Sort by Date</option>
-        </select>
-        <select id="filter-by">
+          <option value="relevance">Relevance</option>
+          <option value="date">Date</option>
+        </select><select id="filter-by" class="border-radius-select">
           <option value="all">Filter by All</option>
           <option value="category1">Filter by Category 1</option>
           <option value="category2">Filter by Category 2</option>
@@ -86,6 +85,27 @@
       </div>
     </div>
 
+     <!-- <div class="search-container">
+      <div class="search-input-container">
+        <input type="text" id="search" placeholder="Search the website...">
+      </div>
+      <div class="search-container">
+        <div class="flex-select">
+          <label for="sortBy">Sort by:</label>
+          <select id="sort-by">
+            <option value="relevance">Sort by: Relevance</option>
+            <option value="date">Sort by: Date</option>
+          </select>
+        </div>
+        <div class="flex-select">
+          <label for="filter-by">Filter by:</label>
+          <select id="filter-by" class="border-radius-select">
+            <option value="category1">Category 1</option>
+            <option value="category2">Category 2</option>
+          </select>
+        </div>
+      </div>
+    </div> -->
 
     <div>
       <h2>"24" Web Topics Found</h2>
@@ -100,8 +120,8 @@
           <img src="img/logos/html.png" alt="HTML image">
         </div>
         <div class="card-content">
-          <p>Web Development Languages</p>
-          <p>HTML</p>
+          <p class="Font-12px">Web Development Languages</p>
+          <p class="Font-bold">HTML</p>
           <div class="star-rating">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -118,8 +138,8 @@
           <img src="img/logos/css.webp" alt="HTML image">
         </div>
         <div class="card-content">
-          <p>Web Development Languages</p>
-          <p>CSS</p>
+          <p class="Font-12px">Web Development Languages</p>
+          <p class="Font-bold">CSS</p>
           <div class="star-rating">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -136,8 +156,8 @@
           <img src="img/logos/javascript.jpg" alt="HTML image">
         </div>
         <div class="card-content">
-          <p>Web Development Languages</p>
-          <p>JavaScript</p>
+          <p class="Font-12px">Web Development Languages</p>
+          <p class="Font-bold">JavaScript</p>
           <div class="star-rating">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -154,8 +174,8 @@
           <img src="img/logos/jquery.png" alt="HTML image">
         </div>
         <div class="card-content">
-          <p>Frontend Frameworks and Libraries</p>
-          <p>JQuery</p>
+          <p class="Font-12px">Frontend Frameworks and Libraries</p>
+          <p class="Font-bold">JQuery</p>
           <div class="star-rating">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -172,8 +192,8 @@
           <img src="img/logos/angular.png" alt="HTML image">
         </div>
         <div class="card-content">
-          <p>Frontend Frameworks and Libraries</p>
-          <p>Angular</p>
+          <p class="Font-12px">Frontend Frameworks and Libraries</p>
+          <p class="Font-bold">Angular</p>
           <div class="star-rating">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -194,8 +214,8 @@
             <img src="img/logos/react.webp" alt="HTML image">
           </div>
           <div class="card-content">
-            <p>Frontend Frameworks and Libraries</p>
-            <p>React</p>
+            <p class="Font-12px">Frontend Frameworks and Libraries</p>
+            <p class="Font-bold">React</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -213,7 +233,7 @@
           </div>
           <div class="card-content">
             <p>Frontend Frameworks and Libraries</p>
-            <p>Vue.js</p>
+            <p class="Font-bold">Vue.js</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -231,7 +251,7 @@
           </div>
           <div class="card-content">
             <p>Backend Frameworks and Libraries</p>
-            <p>Node.js</p>
+            <p class="Font-bold">Node.js</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -249,7 +269,7 @@
           </div>
           <div class="card-content">
             <p>Backend Frameworks and Libraries</p>
-            <p>Express.js</p>
+            <p class="Font-bold">Express.js</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -267,7 +287,7 @@
           </div>
           <div class="card-content">
             <p>Backend Frameworks and Libraries</p>
-            <p>Ruby on Rails</p>
+            <p class="Font-bold">Ruby on Rails</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -289,7 +309,7 @@
           </div>
           <div class="card-content">
             <p>Backend Frameworks and Libraries</p>
-            <p>Django</p>
+            <p class="Font-bold">Django</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -307,7 +327,7 @@
           </div>
           <div class="card-content">
             <p>Backend Frameworks and Libraries</p>
-            <p>Flask</p>
+            <p class="Font-bold">Flask</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -325,7 +345,7 @@
           </div>
           <div class="card-content">
             <p>Databases and APIs</p>
-            <p>SQL</p>
+            <p class="Font-bold">SQL</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -343,7 +363,7 @@
           </div>
           <div class="card-content">
             <p>Databases and APIs</p>
-            <p>NoSQL</p>
+            <p class="Font-bold">NoSQL</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -361,7 +381,7 @@
           </div>
           <div class="card-content">
             <p>Databases and APIs</p>
-            <p>REST APIs</p>
+            <p class="Font-bold">REST APIs</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -383,7 +403,7 @@
           </div>
           <div class="card-content">
             <p>Databases and APIs</p>
-            <p>GraphQL</p>
+            <p class="Font-bold">GraphQL</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -401,7 +421,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>OAuth</p>
+            <p class="Font-bold">OAuth</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -419,7 +439,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>JSON</p>
+            <p class="Font-bold">JSON</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -437,7 +457,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>AJAX</p>
+            <p class="Font-bold">AJAX</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -455,7 +475,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Websockets</p>
+            <p class="Font-bold">Websockets</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -477,7 +497,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Responsive Design</p>
+            <p class="Font-bold">Responsive Design</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -495,7 +515,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Accessibility</p>
+            <p class="Font-bold">Accessibility</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -513,7 +533,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>User Experience (UX)</p>
+            <p class="Font-bold">User Experience (UX)</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -531,7 +551,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>User Interface (UI)</p>
+            <p class="Font-bold">User Interface (UI)</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -549,7 +569,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Design Systems</p>
+            <p class="Font-bold">Design Systems</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -571,7 +591,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Performance Optimization</p>
+            <p class="Font-bold">Performance Optimization</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -589,7 +609,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Cross-Broswer Compatibility</p>
+            <p class="Font-bold">Cross-Broswer Compatibility</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -607,7 +627,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Search Engine Optimization (SEO)</p>
+            <p class="Font-bold">Search Engine Optimization (SEO)</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -625,7 +645,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Web Security</p>
+            <p class="Font-bold">Web Security</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -643,7 +663,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Testing and Debugging</p>
+            <p class="Font-bold">Testing and Debugging</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -665,7 +685,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Continuous Intergration/Continuous...</p>
+            <p class="Font-bold">Continuous Intergration/Continuous...</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -683,7 +703,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>DevOps</p>
+            <p class="Font-bold">DevOps</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -701,7 +721,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Cloud Computing</p>
+            <p class="Font-bold">Cloud Computing</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -719,7 +739,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Docker</p>
+            <p class="Font-bold">Docker</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -737,7 +757,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Microservices</p>
+            <p class="Font-bold">Microservices</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -759,7 +779,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Progessive Web Apps (PWA)</p>
+            <p class="Font-bold">Progessive Web Apps (PWA)</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -777,7 +797,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Web Accessibility Initative (WAI)</p>
+            <p class="Font-bold">Web Accessibility Initative (WAI)</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -795,7 +815,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Content Managemenet Systems (CMS)</p>
+            <p class="Font-bold">Content Managemenet Systems (CMS)</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -813,7 +833,7 @@
           </div>
           <div class="card-content">
             <p>Web Development Concepts and T...</p>
-            <p>Web Analytics</p>
+            <p class="Font-bold">Web Analytics</p>
             <div class="star-rating">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>

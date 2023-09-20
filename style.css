@@ -23,6 +23,12 @@ body {
     color: var(--body-text_light);
 }
 
+body.dark-mode {
+    background-color: var(--bg_default_dark);
+    color: var(--body-text_dark);
+
+}
+
 header {
     width: auto;
     height: auto;
@@ -32,8 +38,8 @@ header {
 
 }
 
-button{
-    background-color: var(--bg_default_light);
+button {
+    background-color: transparent;
     color: var(--body-text_light);
     border-radius: 5px;
     border: solid;
@@ -43,29 +49,103 @@ button{
     font-weight: normal;
 
     padding: 8px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode button  {
+    color: var(--body-text_dark);
+    border-color: var(--lines-color_dark);
+
+}
+
+select {
+    background-color: var(--bg_default_light);
+    color: var(--body-text_light);
+    border: solid;
+    border-width: 1px;
+    border-color: var(--lines-color_light);
+    font-size: 16px;
+    font-weight: normal;
+
+    padding: 8px 10px 8px;
 
     transition: background-color 0.3s ease;
+
+
+}
+
+.dark-mode select{
+    background-color: var(--bg_default_dark);
+    color: var(--body-text_dark);
+    border-color: var(--lines-color_dark);
+}
+
+
+label {
+    background-color: var(--bg_default_light);
+    color: var(--body-text_light);
+    font-size: 12px;
+}
+
+input {
+    background-color: var(--bg_default_light);
+    color: var(--body-text_light);
+    border: solid;
+    border-width: 1px;
+    border-color: var(--lines-color_light);
+    font-size: 16px;
+    font-weight: normal;
+
+    padding: 8px 0px 8px;
+
+    transition: background-color 0.3s ease;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.dark-mode input{
+    background-color: var(--bg_default_dark);
+    color: var(--body-text_dark);
+    border-color: var(--lines-color_dark);
 }
 
 button:hover {
     background-color: var(--lines-color_light);
 }
 
-.button-flex{
+.dark-mode button:hover {
+    background-color: var(--lines-color_dark);
+}
+
+
+.button-flex {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.button-svg{
+.button-svg {
     padding-left: 2px;
     padding-right: 7px;
-    width: 16px; 
+    width: 16px;
     height: 16px;
 }
 
+.border-radius-select {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.flex-select {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
 .Font-normal {
-    
+
     font-weight: normal;
 }
 
@@ -74,6 +154,14 @@ button:hover {
     font-weight: lighter;
 }
 
+.Font-bold {
+    
+    font-weight: bold;
+}
+
+.Font-12px{
+    font-size: 14px;
+}
 
 .Trag_content {
     position: absolute;
@@ -136,6 +224,10 @@ button:hover {
     background-color: var(--bg_body_light);
 }
 
+.dark-mode .container-content{
+    background-color: var(--bg_body_dark);
+}
+
 .triangle-container {
     position: relative;
     width: 100%;
@@ -145,13 +237,13 @@ button:hover {
 
 .triangle {
     position: absolute;
-    
+
     height: 120px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 60%);
 }
 
 .triangle:nth-child(1) {
-    
+
     width: 1300px;
     top: 0;
     right: 0;
@@ -164,12 +256,14 @@ button:hover {
     top: 0;
     left: 0;
     background-image: linear-gradient(to left, var(--brand-primary), var(--brand-secondary));
-    
+
     transform: scaleX(-1);
 }
 
 
 .search-container {
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     width: auto;
@@ -190,17 +284,19 @@ input {
     width: 18%;
     min-width: 255px;
     max-width: 255px;
+    min-height: 300px;
+    max-height: 300px;
     
-    max-height: 287px;
-
-
-
     /* margin: 15px; */
     display: inline-block;
     vertical-align: top;
     text-align: center;
     border-radius: 10px;
     flex-basis: 18%;
+}
+
+.dark-mode .card{
+    background-color: var(--bg_default_dark);
 }
 
 .card-image img {
@@ -210,8 +306,10 @@ input {
     display: block;
     margin: 0 auto;
     object-fit: cover;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     overflow: hidden;
+    
 }
 
 .card-content {
@@ -220,6 +318,7 @@ input {
     text-align: left;
     height: 100%;
     
+
 }
 
 .card-content p {
@@ -244,16 +343,17 @@ input {
 }
 
 
-.container-main-content{
+.container-main-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    flex-grow: 0;
     
     /* max-width: 1240px; */
     gap: 21px;
-    width:auto;
+    width: auto;
 }
 
-.Copyright{
+.Copyright {
     text-align: center;
 }
