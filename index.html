@@ -5,7 +5,9 @@
 
   <title>Cool Website</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- CSS Files -->
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <!-- fonts -->
@@ -26,7 +28,7 @@
   <header>
 
     <div>
-      <h2 class="Main_T Font-normal">Web Topics</h2>
+      <h2 class="Main_T Font-normal"><a href="index.html" class="no_hyperlink_title">Web Topics</a></h2>
     </div>
 
     <div class="header_btn">
@@ -75,8 +77,8 @@
       </div>
       <div>
         <select id="sort-by">
-          <option value="relevance">Relevance</option>
-          <option value="date">Date</option>
+          <option value="relevance">Sort by Relevance</option>
+          <option value="date">Sort by Date</option>
         </select><select id="filter-by" class="border-radius-select">
           <option value="all">Filter by All</option>
           <option value="category1">Filter by Category 1</option>
@@ -84,29 +86,6 @@
         </select>
       </div>
     </div>
-
-     <!-- <div class="search-container">
-      <div class="search-input-container">
-        <input type="text" id="search" placeholder="Search the website...">
-      </div>
-      <div class="search-container">
-        <div class="flex-select">
-          <label for="sortBy">Sort by:</label>
-          <select id="sort-by">
-            <option value="relevance">Sort by: Relevance</option>
-            <option value="date">Sort by: Date</option>
-          </select>
-        </div>
-        <div class="flex-select">
-          <label for="filter-by">Filter by:</label>
-          <select id="filter-by" class="border-radius-select">
-            <option value="category1">Category 1</option>
-            <option value="category2">Category 2</option>
-          </select>
-        </div>
-      </div>
-    </div> -->
-
     <div>
       <h2>"24" Web Topics Found</h2>
     </div>
@@ -121,7 +100,7 @@
         </div>
         <div class="card-content">
           <p class="Font-14px">Web Development Languages</p>
-          <p class="Font-bold">HTML</p>
+          <a href="info.html" class="Font-bold no_hyperlink">HTML</a>
           <div class="star-rating">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -859,7 +838,7 @@
 
   <footer id="favoriteFooter" class="hidden">
     <div>
-      <h2>My Favorite Topics</h2>
+      <h2 style="padding:20px;">My Favorite Topics</h2>
     </div>
   </footer>
 </body>

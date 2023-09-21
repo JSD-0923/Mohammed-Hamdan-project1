@@ -20,5 +20,14 @@ document.addEventListener('DOMContentLoaded', function() {
     //     var favoriteCards = document.getElementById('favoriteCards');
     //     favoriteCards.appendChild(card);
     //   }
+
+
+    fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('name').textContent = data.name;
+        document.getElementById('email').textContent = data.email;
+    })
+    .catch(error => console.error('Error fetching JSON:', error));
     
 });
