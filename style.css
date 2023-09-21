@@ -163,7 +163,7 @@ button:hover {
 }
 
 .Font-Author {
-
+    bottom: 0;
     font-weight: 400;
     opacity: 0.7;
 }
@@ -352,6 +352,11 @@ button:hover {
 .star-rating-2 {
     margin-top: 12px;
     margin-bottom: 12px;
+}
+
+.star-rating-x {
+    margin-top: 50px;
+    margin-bottom: 15px;
 }
 
 .star-rating-info {
