@@ -388,7 +388,8 @@ button:hover {
     align-items: center;
     justify-content: center;
     /* text-align: center; */
-    margin: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .copyright-svg {
@@ -613,5 +614,51 @@ button:hover {
     border-color: var(--bg_body_light);
     color: var(--body-text_light);
     
+
+}
+
+@media (max-width: 1439px) {
+
+  
+    .triangle {
+        height: clamp(40px, calc(40px + 6.25vw), 120px);
+
+    }
+
+    .triangle:nth-child(1) {
+        width: calc(100% - ((100% - 300px) / (1440 - 320) * (100 - 0)));
+
+    }
+
+    .triangle:nth-child(2) {
+        width: calc(100% - ((100% - 300px) / (1440 - 320) * (100 - 0)));
+
+    }
+
+    .Trag_content {
+        left: 50%;
+        right: auto;
+        transform: translateX(-60%);
+        text-align: center;
+        align-items: flex-start;
+        max-width: 80%;
+    }
+    
+}
+ 
+@media (max-width: 445px) {
+
+    .Top-contanier-p {
+        white-space: normal;
+        text-align: left;   
+    }
+
+    .Trag_content{
+        left:50%;
+    }
+
+    .triangle-container{
+        height: 140px;
+    }
 
 }
