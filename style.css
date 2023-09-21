@@ -415,6 +415,7 @@ button:hover {
     height: 200px;
     width: 100%;
     background-color: var(--bg_default_light);
+    padding: 5px 40px 5px 40px;
 }
 
 .dark-mode #favoriteFooter {
@@ -484,7 +485,6 @@ button:hover {
 
 .custom-list {
     list-style-type: none;
-    /* Remove default bullet point */
     padding-top: 1px;
     padding-bottom: 1px;
     padding-left: 0px;
@@ -616,9 +616,14 @@ button:hover {
     background-color: var(--bg_body_light);
     border-color: var(--bg_body_light);
     color: var(--body-text_light);
-    
-
 }
+
+.dark-mode .info-button:hover {
+    background-color: var(--bg_body_light);
+    border-color: var(--bg_body_light);
+    color: var(--body-text_light);
+}
+
 
 
 .search-icon {
@@ -631,7 +636,54 @@ button:hover {
     
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 
+
+.card-footer {
+    background-color: var(--bg_default_light);
+    width: 18%;
+    min-width: 100px;
+    max-width: 120px;
+    height: 100px;
+
+    /* margin: 15px; */
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 10px;
+    flex-basis: 18%;
+}
+
+.dark-mode .card-footer {
+    background-color: var(--bg_default_dark);
+}
+
+.card-footer-image img {
+    width: 100%;
+    max-height: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+
+}
+
+.card-footer-content {
+    padding-right: 0;
+    text-align: left;
+    height: 100%;
+}
+
+.card-footer-content p {
+    margin: 0;
+}
 
 @media (max-width: 1439px) {
 

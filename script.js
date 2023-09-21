@@ -21,13 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
     //     favoriteCards.appendChild(card);
     //   }
 
-
-    fetch('data.json')
-    .then(response => response.json())
-    .then(data => {
-        document.getElementById('name').textContent = data.name;
-        document.getElementById('email').textContent = data.email;
-    })
-    .catch(error => console.error('Error fetching JSON:', error));
+    // fetch('data.json')
+    // .then(response => response.json())
+    // .then(data => {
+    //     document.getElementById('name').textContent = data.name;
+    //     document.getElementById('title').textContent = data.title;
+    // })
+    // .catch(error => console.error('Error fetching JSON:', error));
     
 });
