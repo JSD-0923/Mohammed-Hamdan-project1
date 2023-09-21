@@ -700,6 +700,34 @@ button:hover {
     
 }
 
+@media (min-width: 1450px) {
+
+  
+    .triangle {
+        height: clamp(40px, calc(40px + 6.25vw), 120px);
+
+    }
+
+    .triangle:nth-child(1) {
+        width: calc(100% + ((100% - 300px) / (1440 - 320) * (100 - 0)));
+
+    }
+
+    .triangle:nth-child(2) {
+        width: calc(100% + ((100% - 300px) / (1440 - 320) * (100 - 0)));
+
+    }
+
+    .Trag_content {
+        left: 50%;
+        right: auto;
+        transform: translateX(-60%);
+        text-align: center;
+        align-items: flex-start;
+        max-width: 80%;
+    }
+}
+
 @media (max-width: 1439px) {
 
   
@@ -830,6 +858,13 @@ button:hover {
 
 }
 
+@media (max-width: 575px){
+
+    .white-box {
+        width: auto;
+    }
+
+}
 
 @media (max-width: 450px) {
 
