@@ -435,6 +435,8 @@ button:hover {
     box-sizing: border-box;
     background-color: var(--body-text_light);
     color: var(--body-text_dark);
+    flex: 1;
+    box-sizing: border-box;
     
 }
 
@@ -449,7 +451,8 @@ button:hover {
     width: 100%;
     box-sizing: border-box;
     background-color: var(--bg_body_light);
-
+    flex: 1;
+    box-sizing: border-box;
 }
 
 .dark-mode .container-content-info-bottom {
@@ -513,8 +516,9 @@ button:hover {
     position: absolute;
     z-index: 999;
     top: 0;
-    right: 10%;
+    right: 5%;
     margin-top: 220px;
+    background-color: var(--bg_body_light);
     
 }
 
@@ -685,6 +689,17 @@ button:hover {
     margin: 0;
 }
 
+.inner-info-content-hold{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-content-holder{
+    display:flex;
+    flex-direction: column;
+    
+}
+
 @media (max-width: 1439px) {
 
   
@@ -712,6 +727,51 @@ button:hover {
         max-width: 80%;
     }
     
+    .info-card-container {
+
+        right: calc(5% - 2%);
+    }
+
+}
+
+@media (max-width: 1230px){
+    
+    .info-card-container {
+
+        position: relative;
+        padding-left: calc(380px - 5%);
+        right: 0;
+        width: 100%;
+        margin-top: 0px;
+
+    }
+    
+    .info-content-holder{
+
+        justify-content: center;
+
+    }
+
+}
+
+@media (max-width: 750px){
+    
+    .info-card-container {
+
+        position: relative;
+        padding-left: calc(380px - 20%);
+        right: 0;
+        width: 100%;
+        margin-top: 0px;
+
+    }
+    
+    .info-content-holder{
+
+        justify-content: center;
+
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -733,7 +793,6 @@ button:hover {
 }
 
 
-
 @media (max-width: 600px){
 
     .visually-hidden {
@@ -752,6 +811,44 @@ button:hover {
     .header_btn {
         padding-right: calc(60px - 5%); 
     }
+
+    .info-card-container {
+
+        position: relative;
+        padding-left: calc(380px - 50%);
+        right: 0;
+        width: 100%;
+        margin-top: 0px;
+
+    }
+    
+    .info-content-holder{
+
+        justify-content: center;
+
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .info-card-container {
+
+        position: relative;
+        padding-left: calc(380px - 70%);
+        right: 0;
+        width: 100%;
+        margin-top: 0px;
+
+    }
+    
+    .info-content-holder{
+
+        justify-content: center;
+
+    }
+
 }
 
 
@@ -769,4 +866,42 @@ button:hover {
     .triangle-container{
         height: 140px;
     }
+
+    .info-card-container {
+
+        position: relative;
+        padding-left: calc(380px - 80%);
+        right: 0;
+        width: 100%;
+        margin-top: 0px;
+
+    }
+    
+    .info-content-holder{
+
+        justify-content: center;
+
+    }
+
+}
+
+
+@media (max-width: 360px) {
+    
+    .info-card-container {
+
+        position: relative;
+        padding-left: calc(330px - 98%);
+        right: 0;
+        width: 100%;
+        margin-top: 0px;
+
+    }
+    
+    .info-content-holder{
+
+        justify-content: center;
+
+    }
+
 }
